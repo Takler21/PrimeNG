@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    margin:0;
+}
+
+.ui-g div{
+    background-color:#ededed;
+    text-align: center;
+    border: 1px solid #fafafa;
+}
+
+main{
+    text-align:center;
+}

@@ -1,0 +1,9 @@
+﻿.ui-dialog .ui-datatable table {
+    table-layout: auto
+}
+
+.text-right {
+    text-align: right;
+    margin-top: 8px;
+    margin-left: 5px;
+}

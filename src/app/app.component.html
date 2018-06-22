@@ -1,0 +1,49 @@
+﻿<!--<p-accordion>
+    <p-accordionTab header="Salads">
+        Salads...
+    </p-accordionTab>
+    <p-accordionTab header="Pasta">
+        Pasta...
+    </p-accordionTab>
+    <p-accordionTab header="Pizza" [selected]="true">
+        <p-radioButton label="Double cheese"
+                       name="pizza"
+                       value="double-cheese"
+                       [(ngModel)]="pizzaSelection">
+        </p-radioButton><br>
+
+        <p-radioButton label="Anchovy"
+                       name="pizza"
+                       value="anchovy"
+                       [(ngModel)]="pizzaSelection">
+        </p-radioButton><br>
+
+        <p-radioButton label="Meat lover's 🍖"
+                       name="pizza"
+                       value="meat-lover"
+                       [(ngModel)]="pizzaSelection">
+        </p-radioButton>
+    </p-accordionTab>
+</p-accordion>-->
+<!--<br>
+
+<p-panel header="Extras" *ngIf="pizzaSelection && pizzaSelection.length">
+    🍕 Would you like extra cheese on your pizza?
+    <button pButton type="button" label="Ok, yeah!"></button>
+</p-panel-->
+<div>
+    <!--<div class="lateral">-->
+        <p-menu class="ui-g-12 ui-md-2 ui-g-nopad" [model]="items"></p-menu><!--ui-g-12 ui-md-2-->
+    <!--</div>-->
+    <main class="ui-g-12 ui-md-10 ui-g-nopad">
+        <h2>{{title}}</h2>
+        <app-service *ngIf="title == 'Servicios'"></app-service>
+        <app-user *ngIf="title == 'Usuarios'"></app-user>
+
+        <!--<p-table *ngIf="title == 'Usuarios'" [value]="transactions">
+            <p-column field="date" header="Date" [sortable]="true"></p-column>
+            <p-column field="label" header="Label" [sortable]="true"></p-column>
+            <p-column field="amount" header="Amount" [sortable]="true"></p-column>
+        </p-table>-->
+    </main>
+</div>
